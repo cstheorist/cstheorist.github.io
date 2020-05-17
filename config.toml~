@@ -1,8 +1,0 @@
-baseURL = "http://theorize.co/"
-languageCode = "en-us"
-title = "Testing new theories every day!"
-theme = "monopriv"
-canonifyurls = true
-paginate = 4
-
-
