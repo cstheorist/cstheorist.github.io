@@ -12,21 +12,12 @@
     
     
     <item>
-      <title>My First Post</title>
+      <title>Starting a new blog...</title>
       <link>http://theorize.co/post/my-first-post/</link>
       <pubDate>Sun, 17 May 2020 14:57:25 -0400</pubDate>
       
       <guid>http://theorize.co/post/my-first-post/</guid>
-      <description>this is just a test</description>
-    </item>
-    
-    <item>
-      <title>Testing a Post</title>
-      <link>http://theorize.co/post/testing-a-post/</link>
-      <pubDate>Sun, 22 Sep 2019 07:49:43 -0400</pubDate>
-      
-      <guid>http://theorize.co/post/testing-a-post/</guid>
-      <description>This is just a test to see how these posts will work under a few different themes.</description>
+      <description>I have decided to take some time to start a new blog. My goal of setting up this space is to allow me to conver topics that I find generally interesting and more importantly to give me a place to simply write things down.</description>
     </item>
     
   </channel>
