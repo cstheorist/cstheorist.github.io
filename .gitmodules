@@ -4,3 +4,7 @@
 [submodule "themes/hugo-swift-theme"]
 	path = themes/hugo-swift-theme
 	url = https://github.com/onweru/hugo-swift-theme.git
+[submodule "public"]
+	path = public
+	url = https://github.com/cstheorist/cstheorist.github.io.git
+	branch = master
