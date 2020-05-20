@@ -1,0 +1,26 @@
+{{define "main"}}
+{{- partial "hero.html" . -}}
+<section id="posts" class="container mt-4">
+    {{ if .Site.Params.search.enabled }}
+        {{partial "search.html" .}}
+    {{end}}
+	<div class="card-columns mt-3">
+    {{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections).ByTitle }}
+				<div class="bg-light card">
+					<div class="card-body">
+					  <h5 class="font-weight-bold card-title">{{.Title}}</h5>
+					  <h6 class="text-monospace card-subtitle mb-2 text-muted">{{ .PublishDate.Format "January 2, 2006" }}</h6>
+					  <small class="card-text text-monospace">{{.Summary}}</small>
+					  <a href="{{.Permalink}}" class="card-link">Read More...</a>
+					</div>
+			  </div>
+			{{end}}
+		</div>
+</section>
+<section class="container text-center mt-2">
+    <h5 class="font-weight-bold card-title">Books I am currently reading...</h5>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=cstheorist-20&marketplace=amazon&region=US&placement=B075RR1XVG&asins=B075RR1XVG&linkId=8d7e7e17372fefe3f3e8788ef1e986d3&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cstheorist-20&language=en_US&marketplace=amazon&region=US&placement=1942788762&asins=1942788762&linkId=f4fa29ae95f38c67c63a5a9ac0f63af9&show_border=true&link_opens_in_new_window=true"></iframe>
+</section>
+{{end}}
