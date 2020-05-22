@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="description" content=''>
+	
+		
+		<meta name="keywords" content=''>
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Hugo 0.58.3" />
+	<link rel="stylesheet" type="text/css" href='http://theorize.co/css/bootstrap.min.css'>
+	<title>Real Time != Real Fast</title>
+</head>
+<body>
+      <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
+    <a href='http://theorize.co/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+    <a href='http://theorize.co/about'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+    <a href='http://theorize.co/post'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+    <a href='http://theorize.co/tags'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+</nav>
+
+
+	<section class="container text-justified mt-3">
+	  <h2 class="font-weight-bold">Real Time != Real Fast</h2>
+	  <small class="text-secondary mb-5">Posted on May 21, 2020 | 5 minute read</small>
+		  <p>Ok, a pet peeve of mine and something that if you ever want to get in a heated debate with me about - just tell me you need some data in real time and presume that I have any clue what you mean.  First, understand that early in my career I worked on some systems where WHEN things occurred was important.  For example, I worked on the Patriot missile system, radar systems, and built an emulator of a military computer first designed in the 1970s with a few other extraordinary engineers.  Those systems required a level of precision to function - some of those functions required execution within +/- hours, +/- minutes, +/- seconds, +/- milliseconds, +/- microseconds, etc.  So, if I asked you which of those things had the requirement of being real time what might you have said?  The correct answer is you don&rsquo;t have enough information.</p>
+
+<p>So let&rsquo;s dig in a bit more.  When we talk about real time we tend to be talking about some notion of time arrival.  In the systems I described above these most frequently were related to the notion of scheduling tasks that needed to occur.  To this end we should take a step back and understand that computers inherently respond to events.  Those events may be periodic (based for example on a clock or a rotating piece of machinery) or they may be Aperiodic (like a button was pressed which closes a circuit causing something to happen).  Given that all these things want to cause our computer to do something - how do we make sure that the work gets done?  Well, most systems ultimately will fake those Aperiodic events on a periodic basis (like sample if a button is pressed at 10Hz) and then adopt a <em>schedule</em> to ensure all inputs are assessed.  And here is where we come to the key word - Real Time.</p>
+
+<ul>
+<li>Real Time means that correctness of result depends on both functional correctness and time that the result is delivered.  If things are too slow then we typically consider this a problem.  If things are too fast it is also a problem.</li>
+</ul>
+
+<p>You might say - what is the harm in too fast?  Well go back to the emulator I was building.  If that emulator was running to fast then the algorithms that were assessing Radar Signals would begin to look for samples of data at a rate faster then they were being generated.  If those signals were not present - then the algorithms would misinterpret the real world and ultimately would provide incorrect results.  In a military system that means the radar may not properly identify an enemy aircraft - yikes!</p>
+
+<p>Ok&hellip; so real time is about the correctness of some function occurring at some time.  There are typically 3 variants of Real Time that are talked about:</p>
+
+<ul>
+<li>Soft real time is when the utility of the function degrades with the distance from the time it was to occur.  For example if I have a radar a soft real time algorithm that returns at the incorrect time might lead to still finding an object but the accuracy of the reading deteriorates.  That reading may still provide utility but it won&rsquo;t be as good as it could have been.</li>
+<li>Hard real time ends in a failure when the time is missed.  In the radar example this might mean the radar is no longer functioning.</li>
+<li>Firm real time provides no utility when not received at the appropriate time but the system won&rsquo;t fail on just a single miss.  In the radar example everything might function completely normal although every other invocation of our algorithm it returns at the wrong time.</li>
+</ul>
+
+<p>Now, there are lots of fun examples we can play with here but that requires taking some time to go learn about scheduling algorithms (there are a lot of them - both Dynamic and Static as well as Preemptive and Nonpremptive for example).  And for those who like the theory behind computer science we find that Schedulability is an NP-hard problem  if there are any resource dependencies (and one reason why we like to model Aperiodic tasks on a periodic schedule when working on such systems).</p>
+
+<p>For those interested I suggest to read further on concepts like RMS (Rate Monotonic Analysis) and creations of Harmonic Deadline Monotonic Schedules.  Lots of fun stuff there but more then I will be able to do justice to this evening.</p>
+
+<p>Finally you might ask why this topic makes me so grumpy.  Well, one space I really enjoy working in is robotics - and the pace of innovation here is amazing (for those who want to play around - check out AWS Robomaker which is based in part on work I did right before leaving Amazon).  As robots and humans want to interact more closely ensuring that they do so safely is important.  As a result understanding how to schedule some tasks so that the will NEVER fail is important - I don&rsquo;t want a robot to run me over because some algorithm didn&rsquo;t execute and produce a result at the right time.  I suspect that for some time we will need a good number of engineers to appreciate this distinction.  With that said; I also think there is an enormous opportunity to work on a reactive programming model that can work across a distributed system to make this obvious.  Specifically I think that there is a lot of untapped potential for a new bread of time based messaging founded atop the notion of lambda-calculus where time constraints can be declared allowing for a broker to apply the appropriate scheduling and making safety systems far easier for a great number of engineers to build (background context might be to look at a language such as Erlang).  For those readers who might be interested on that topic reach out and perhaps we can start making it real.</p>
+
+	  <hr>
+	  <div>Share via
+	  <a title='email' href='mailto:?subject=Real%20Time%20%21%3d%20Real%20Fast&body=http%3a%2f%2ftheorize.co%2fpost%2frealtimenotrealfast%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
+	  
+	  </div>
+	  <br>
+	  <code>Tags:
+	  </code>
+	  <br>
+	    
+	</section>
+
+
+
+      </div>
+  </body><footer>
+  <div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
+    <small> Any opinions expressed on this site are my own </small> </br>
+    <small> Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Derived from Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+  </div>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5XCESZV5Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M5XCESZV5Z');
+    </script>
+  
+</footer>
+<div>
+</div>
+</html>

@@ -6,10 +6,19 @@
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2020 19:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2020 07:49:43 -0400</lastBuildDate>
     
 	<atom:link href="http://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Real Time != Real Fast</title>
+      <link>http://theorize.co/post/realtimenotrealfast/</link>
+      <pubDate>Thu, 21 May 2020 07:49:43 -0400</pubDate>
+      
+      <guid>http://theorize.co/post/realtimenotrealfast/</guid>
+      <description>Ok, a pet peeve of mine and something that if you ever want to get in a heated debate with me about - just tell me you need some data in real time and presume that I have any clue what you mean.</description>
+    </item>
     
     <item>
       <title>Influence Change: Part1</title>
