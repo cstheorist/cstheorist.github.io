@@ -33,7 +33,7 @@
 <li>Real Time means that correctness of result depends on both functional correctness and time that the result is delivered.  If things are too slow then we typically consider this a problem.  If things are too fast it is also a problem.</li>
 </ul>
 
-<p>You might say - what is the harm in too fast?  Well go back to the emulator I was building.  If that emulator was running to fast then the algorithms that were assessing Radar Signals would begin to look for samples of data at a rate faster then they were being generated.  If those signals were not present - then the algorithms would misinterpret the real world and ultimately would provide incorrect results.  In a military system that means the radar may not properly identify an enemy aircraft - yikes!</p>
+<p>You might say - what is the harm in too fast?  Well go back to the emulator I was building.  If that emulator was running too fast then the algorithms that were assessing Radar Signals would begin to look for samples of data at a rate faster then they were being generated.  If those signals were not present (or the previous signal was still present) then the algorithms would misinterpret the real world and ultimately provide incorrect results.  In a military system that means the radar may not properly identify an enemy aircraft - yikes!</p>
 
 <p>Ok&hellip; so real time is about the correctness of some function occurring at some time.  There are typically 3 variants of Real Time that are talked about:</p>
 
