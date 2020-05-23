@@ -24,7 +24,12 @@
 
 	<section class="container text-justified mt-3">
 	  <h2 class="font-weight-bold">Real Time != Real Fast</h2>
-	  <small class="text-secondary mb-5">Posted on May 21, 2020 | 5 minute read</small>
+	  <small class="text-secondary mb-5">Posted on May 21, 2020 | 
+		    5 minute read | 
+	            Share via 
+		       <a title='email' href='mailto:?subject=Real%20Time%20%21%3d%20Real%20Fast&body=https%3a%2f%2ftheorize.co%2fpost%2frealtimenotrealfast%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
+	               
+	  </small>
 		  <p>Ok, a pet peeve of mine and something that if you ever want to get in a heated debate with me about - just tell me you need some data in real time and presume that I have any clue what you mean.  First, understand that early in my career I worked on some systems where WHEN things occurred was important.  For example, I worked on the Patriot missile system, radar systems, and built an emulator of a military computer first designed in the 1970s with a few other extraordinary engineers.  Those systems required a level of precision to function - some of those functions required execution within +/- hours, +/- minutes, +/- seconds, +/- milliseconds, +/- microseconds, etc.  So, if I asked you which of those things had the requirement of being real time what might you have said?  The correct answer is you don&rsquo;t have enough information.</p>
 
 <p>So let&rsquo;s dig in a bit more.  When we talk about real time we tend to be talking about some notion of time arrival.  In the systems I described above these most frequently were related to the notion of scheduling tasks that needed to occur.  To this end we should take a step back and understand that computers inherently respond to events.  Those events may be periodic (based for example on a clock or a rotating piece of machinery) or they may be Aperiodic (like a button was pressed which closes a circuit causing something to happen).  Given that all these things want to cause our computer to do something - how do we make sure that the work gets done?  Well, most systems ultimately will fake those Aperiodic events on a periodic basis (like sample if a button is pressed at 10Hz) and then adopt a <em>schedule</em> to ensure all inputs are assessed.  And here is where we come to the key word - Real Time.</p>
@@ -50,11 +55,6 @@
 <p>Finally you might ask why this topic makes me so grumpy.  Well, one space I really enjoy working in is robotics - and the pace of innovation here is amazing (for those who want to play around - check out AWS Robomaker which is based in part on work I did right before leaving Amazon).  As robots and humans want to interact more closely ensuring that they do so safely is important.  As a result understanding how to schedule some tasks so that the will NEVER fail is important - I don&rsquo;t want a robot to run me over because some algorithm didn&rsquo;t execute and produce a result at the right time.  I suspect that for some time we will need a good number of engineers to appreciate this distinction.  With that said; I also think there is an enormous opportunity to work on a reactive programming model that can work across a distributed system to make this obvious.  Specifically I think that there is a lot of untapped potential for a new bread of time based messaging founded atop the notion of lambda-calculus where time constraints can be declared allowing for a broker to apply the appropriate scheduling and making safety systems far easier for a great number of engineers to build (background context might be to look at a language such as Erlang).  For those readers who might be interested on that topic reach out and perhaps we can start making it real.</p>
 
 	  <hr>
-	  <div>Share via
-	  <a title='email' href='mailto:?subject=Real%20Time%20%21%3d%20Real%20Fast&body=https%3a%2f%2ftheorize.co%2fpost%2frealtimenotrealfast%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
-	  
-	  </div>
-	  <br>
 	  <code>Tags:
 	  </code>
 	  <br>
