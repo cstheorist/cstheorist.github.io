@@ -6,10 +6,19 @@
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2020 07:49:43 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Minimizing complexity over the life of a system</title>
+      <link>https://theorize.co/post/complexityovertime/</link>
+      <pubDate>Sat, 23 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/complexityovertime/</guid>
+      <description>When building systems I have come to recognize that after some period of time (years) that the complexity of these systems increases significantly.</description>
+    </item>
     
     <item>
       <title>Real Time != Real Fast</title>
