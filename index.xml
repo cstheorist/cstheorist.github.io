@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pondering new theories every day!</title>
-    <link>https//theorize.co/</link>
+    <link>https://theorize.co/</link>
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 May 2020 07:49:43 -0400</lastBuildDate>
     
-	<atom:link href="https//theorize.co/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Real Time != Real Fast</title>
-      <link>https//theorize.co/post/realtimenotrealfast/</link>
+      <link>https://theorize.co/post/realtimenotrealfast/</link>
       <pubDate>Thu, 21 May 2020 07:49:43 -0400</pubDate>
       
-      <guid>https//theorize.co/post/realtimenotrealfast/</guid>
+      <guid>https://theorize.co/post/realtimenotrealfast/</guid>
       <description>Ok, a pet peeve of mine and something that if you ever want to get in a heated debate with me about - just tell me you need some data in real time and presume that I have any clue what you mean.</description>
     </item>
     
     <item>
       <title>Influence Change: Part1</title>
-      <link>https//theorize.co/post/influencechangepart1/</link>
+      <link>https://theorize.co/post/influencechangepart1/</link>
       <pubDate>Wed, 20 May 2020 19:22:59 -0400</pubDate>
       
-      <guid>https//theorize.co/post/influencechangepart1/</guid>
+      <guid>https://theorize.co/post/influencechangepart1/</guid>
       <description>Something I love doing is going into a new environment to learn. I have a fairly broad set of interests which helps but I love to approach every situation, even those that seem familiar, as an opportunity to walk away knowing something I hadn&amp;rsquo;t known going in.</description>
     </item>
     
     <item>
       <title>Keeping Systems Decoupled</title>
-      <link>https//theorize.co/post/decoupling/</link>
+      <link>https://theorize.co/post/decoupling/</link>
       <pubDate>Wed, 20 May 2020 07:49:43 -0400</pubDate>
       
-      <guid>https//theorize.co/post/decoupling/</guid>
+      <guid>https://theorize.co/post/decoupling/</guid>
       <description>A common problem I have been asked to solve on a variety of the systems I have worked on is how to move data between independent components (different monoliths, micro-services, databases, etc).</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https//theorize.co/about/</link>
+      <link>https://theorize.co/about/</link>
       <pubDate>Sun, 17 May 2020 15:08:03 -0400</pubDate>
       
-      <guid>https//theorize.co/about/</guid>
+      <guid>https://theorize.co/about/</guid>
       <description>I am Jeremiah Brazeau; a software developer, pilot, pianist, and general hobbyist. In my career I have worked for small startups, co-founding an Eletronic Health Records company around 2000, that unfortunatly was a little ahead of it&amp;rsquo;s time, and working at Kiva Systems (little orange robots) which was acquired by Amazon.</description>
     </item>
     
     <item>
       <title>Starting a new blog...</title>
-      <link>https//theorize.co/post/my-first-post/</link>
+      <link>https://theorize.co/post/my-first-post/</link>
       <pubDate>Sun, 17 May 2020 14:57:25 -0400</pubDate>
       
-      <guid>https//theorize.co/post/my-first-post/</guid>
+      <guid>https://theorize.co/post/my-first-post/</guid>
       <description>I have decided to take some time to start a new blog. My goal of setting up this space is to allow me to conver topics that I find generally interesting and more importantly to give me a place to simply write things down.</description>
     </item>
     
