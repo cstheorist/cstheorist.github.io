@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="description" content=''>
+	
+		
+		<meta name="keywords" content=''>
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Hugo 0.58.3" />
+	<link rel="stylesheet" type="text/css" href='https://theorize.co/css/bootstrap.min.css'>
+	<title>Learning in layers</title>
+</head>
+<body>
+      <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
+    <a href='https://theorize.co/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+    <a href='https://theorize.co/about'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+    <a href='https://theorize.co/post'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+    <a href='https://theorize.co/tags'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+</nav>
+
+
+	<section class="container text-justified mt-3">
+	  <h2 class="font-weight-bold">Learning in layers</h2>
+	  <small class="text-secondary mb-5">Posted on May 24, 2020 | 
+		    2 minute read | 
+	            Share via 
+		       <a title='email' href='mailto:?subject=Learning%20in%20layers&body=https%3a%2f%2ftheorize.co%2fpost%2fvisuallearningtechniques%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
+	               
+	  </small>
+		  <p>While back in school I spent time studying the human visual system and worked on attempting to model that system in software through the creation of various Neural Networks.  The approach I took was to model various layers in the human visual system (LGN, V1, MT, etc).  The results I obtained at the time were interesting in observation but not practical in practice for a number of reasons (computation was to slow, lack of large training data sets, etc).  In the last 20 years a lot has changed so it got me wondering if any of those concepts or approaches had since been applied.  More specifically, if current models of detecting objects attempted to take a layered approach.  If I were to look at the problem with fresh eyes today I might attempt something like the following:</p>
+
+<ul>
+<li>Create a model that aims to detect lines and angles.</li>
+<li>Create a model that takes the previous layer as input and looks for primitive objects.</li>
+<li>Build up from primitive objects to complicated forms.</li>
+<li>From complicated forms we can track time and learn types of interaction.</li>
+</ul>
+
+<p>So, let us say that we want to create a model that looks for people in an image I might first look to reduce the raw pixels into basic shapes, then look to learn from those shapes what might be a &ldquo;head&rdquo;, &ldquo;arm&rdquo;, &ldquo;leg&rdquo;, etc.  Then from there I could look for what are the most likely humans.  Finally, we can look at if 2 people are interacting with each other (talking, touching, moving out of each others way, etc).</p>
+
+<p>I would posit that an approach like this might work well where discrete detection of individuals is important (tracking a person in a crowd, tracking people interacting with each other, collaborative robotics, etc).  By building up from pieces I would invert the need to perform, for example, pose estimation given what I presume is a body and instead would derive a body from potential poses that I have observed.</p>
+
+<p>There are plenty of problems that I believe that such systems could solve where we would want to track individuals in crowds and/or through occlusions (store automation, security tracking, OSHA Compliance, etc).  I wonder if such a method would be more robust to different and changing environments then models that attempt to simply identify people and then attempt to estimate pose and behavior after the fact..</p>
+
+<p>If anyone has written or seen any papers in this space please share as I am curious what we might consider state of the art in this space today!</p>
+
+	  <hr>
+	  <code>Tags:
+	  </code>
+	  <br>
+	    
+	      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+              <div id="commento"></div>
+	    
+	    
+	</section>
+
+
+
+      </div>
+  </body><footer>
+  <div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
+    <small> Any opinions expressed on this site are my own </small> </br>
+    <small> Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Derived from Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+  </div>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5XCESZV5Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M5XCESZV5Z');
+    </script>
+  
+</footer>
+<div>
+</div>
+</html>

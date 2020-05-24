@@ -6,10 +6,19 @@
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2020 07:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning in layers</title>
+      <link>https://theorize.co/post/visuallearningtechniques/</link>
+      <pubDate>Sun, 24 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/visuallearningtechniques/</guid>
+      <description>While back in school I spent time studying the human visual system and worked on attempting to model that system in software through the creation of various Neural Networks.</description>
+    </item>
     
     <item>
       <title>Minimizing complexity over the life of a system</title>
