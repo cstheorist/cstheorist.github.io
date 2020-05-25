@@ -6,17 +6,26 @@
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2020 10:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 10:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Minimizing complexity over the life of a system - Part 3</title>
+      <link>https://theorize.co/post/complexityovertime3/</link>
+      <pubDate>Mon, 25 May 2020 10:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/complexityovertime3/</guid>
+      <description>In my previous post I called out 3 areas that stood out to me as adding complexity over time to long lived systems and dug into the first of those points (using a technology without asking WHY it was the right tool).</description>
+    </item>
+    
+    <item>
       <title>Minimizing complexity over the life of a system - Part 2</title>
-      <link>https://theorize.co/post/writing/complexityovertime2/</link>
+      <link>https://theorize.co/post/complexityovertime2/</link>
       <pubDate>Sun, 24 May 2020 10:22:59 -0400</pubDate>
       
-      <guid>https://theorize.co/post/writing/complexityovertime2/</guid>
+      <guid>https://theorize.co/post/complexityovertime2/</guid>
       <description>In my previous post I called out 3 areas that stood out to me as adding complexity over time to long lived systems and dug into the first of those points (using a technology without asking WHY it was the right tool).</description>
     </item>
     
