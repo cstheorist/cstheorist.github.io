@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2020 10:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 06:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Rule of 2AM</title>
+      <link>https://theorize.co/post/theruleof2am/</link>
+      <pubDate>Tue, 26 May 2020 06:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/theruleof2am/</guid>
+      <description>The rule of 2AM goes like this:
+ As a developer when you are about to submit your pull request ask yourself, will everyone on my team be able to understand what the logic I have just implemented does at 2AM within 15 minutes?</description>
+    </item>
     
     <item>
       <title>Minimizing complexity over the life of a system - Part 3</title>
