@@ -6,10 +6,19 @@
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2020 06:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Some thoughts on Negative Caching</title>
+      <link>https://theorize.co/post/negativecaching/</link>
+      <pubDate>Wed, 27 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/negativecaching/</guid>
+      <description>Over the past few years I have been working on APIs that are public facing. The implication is that I have little control over what messages may hit a service that I build.</description>
+    </item>
     
     <item>
       <title>The Rule of 2AM</title>
