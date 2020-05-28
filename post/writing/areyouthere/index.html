@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="description" content=''>
+	
+		
+		<meta name="keywords" content=''>
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Hugo 0.58.3" />
+	<link rel="stylesheet" type="text/css" href='https://theorize.co/css/bootstrap.min.css'>
+	<title>Are you there? More than just availability...</title>
+</head>
+<body>
+      <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
+    <a href='https://theorize.co/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+    <a href='https://theorize.co/about'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+    <a href='https://theorize.co/post'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+    <a href='https://theorize.co/tags'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+</nav>
+
+
+	<section class="container text-justified mt-3">
+	  <h2 class="font-weight-bold">Are you there? More than just availability...</h2>
+	  <small class="text-secondary mb-5">Posted on May 28, 2020 | 
+		    5 minute read | 
+	            Share via 
+		       <a title='email' href='mailto:?subject=Are%20you%20there%3f%20More%20than%20just%20availability...&body=https%3a%2f%2ftheorize.co%2fpost%2fwriting%2fareyouthere%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
+	               
+	  </small>
+		  <p>Technology is constantly changing all around us.  Could you imagine making a phone call today and missing every other word?  What is the voice of the individual on the other end was delayed by 10 seconds?  What is the sound was muffled?  I suspect most of us would not find those conditions unacceptable.  Now go back 20 years - how might we have felt then (remember those great analog based cell phones)?  Technology is constantly progressing and as engineers we need to look out for where it is moving to continue to move the industry forward.</p>
+
+<p>For me one of those key areas of change that is specifically worth calling out today is Availability.  For a long time availability meant dial tone.  Think back to the days of dial-up (I like to imagine that most engineers still remember those days of beeps).  I would consider something available (prodigy, aol.com, etc) as available if when a request was made some response was returned (eventually).  Beyond dial-up came DSL, and Cable, and Fiber connections.  Generally everyone came to expect not just a response but a response in a reasonable timeframe.  Amazon and Google began to measure user behaviors and responses became slower.  Then mobile phones became a go to device to stay connected.  Mobile connections were not as predictable and some expectations were reset to be a bit more flexible.  Once again though in the past few years LTE connections have raised expectations and I largely expect the 5G will force a continued customers behaviors to be driven towards fast responses.</p>
+
+<p>Finally, and Machine Learning improves customers will expect those experiences to not just be fast but also tailored to their personal preferences.  This implies not just being able to respond quickly but to also incorporate new information quickly.  For example if I go to an e-commerce website and am browsing shoes and then type the word &ldquo;red&rdquo; I expect to see red shoes not just red things.</p>
+
+<p>So, my question to those reading this post; if I asked you if your service was available then what should the answer be?  Generally we tend to think of things in terms of SLAs, SLOs and SLIs.  For those who may not have heard those terms:</p>
+
+<ul>
+<li>A SLA (service level agreement) is an agreement between provider and client about measurable metrics like uptime, responsiveness, and responsibilities.</li>
+<li>A SLO (service level objective) is an agreement within an SLA about a specific metric like uptime or response time. So, if the SLA is the formal agreement between you and your customer, SLOs are the individual promises you’re making to that customer.</li>
+<li>A SLI (service level indicator) measures compliance with an SLO (service level objective). So, for example, if your SLA specifies that your systems will be available 99.95% of the time, your SLO is likely 99.95% uptime and your SLI is the actual measurement of your uptime such as 99.96%.</li>
+</ul>
+
+<p>In the context above availability was simply defined via the legacy notion of &ldquo;dial-tone.&rdquo;  In other words, did we get some valid response when a request was made.  But now that technology has continued to mature is that enough?  Does dial-tone meet a customers expectations?  As engineers building software today perhaps we can work backwards to better consider what actions we should be taking now.  If there are areas we may want to offer an SLI the first thing we might consider is measuring those areas and focus in on the SLIs.  If we have decided that something is important to measure we should also take the time to write down what we think is a reasonable set of bounds for the thing we are measuring.  For example, if we are building and exposing APIs we might consider some of the following SLOs:</p>
+
+<ul>
+<li>Latency: 99% of calls return in under 1 second</li>
+<li>Consistency: 95% or reads that occur after a write return with the value written</li>
+<li>Predictability: All calls with equivalent inputs return within +/- 5ms</li>
+<li>Rate: All calls up to 10,000 RPS are processed</li>
+</ul>
+
+<p>By taking time to write these down we set ourselves on a path to also ensure we are measuring each of these objectives by measuring these qualities in production and monitoring our SLIs.  With this we can gain confidence, track how our processes (Deployment, Feature Rollout, CI Systems, Test Harnesses, etc.) can drive conformance and ultimately move to the step of SLA and making commitments to your customers.  As the inherent expectations continue to grow I believe that these additional SLAs will become one differentiator in the marketplace driven my clients (consumers) expectations.</p>
+
+<p>A takeaway is that as technology improves the expectation on those technologies continues to go up as well.  As engineers we need to constantly remind ourselves of this fact and continuously keep an eye out as the world around us continues to progress.  Stay still and you will find your competitors move ahead.</p>
+
+<p>As I have gotten to the end of this post I feel it is important to spend some time thinking about characteristics that lead to robust designs (dampen noise in inherently unstable environments).  Stay tuned as I suspect that will be what I take some time to ponder next.</p>
+
+	  <hr>
+	  <code>Tags:
+	  </code>
+	  <br>
+	    
+	      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+              <div id="commento"></div>
+	    
+	    
+	</section>
+
+
+
+      </div>
+  </body><footer>
+  <div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
+    <small> Any opinions expressed on this site are my own </small> </br>
+    <small> Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Derived from Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+  </div>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5XCESZV5Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M5XCESZV5Z');
+    </script>
+  
+</footer>
+<div>
+</div>
+</html>
