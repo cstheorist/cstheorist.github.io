@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2020 07:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building for failure in a distributed world - taking dependencies robustly</title>
+      <link>https://theorize.co/post/buildingforfailure/</link>
+      <pubDate>Sat, 30 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/buildingforfailure/</guid>
+      <description>I have been working on systems that customers rely on 24x7 my entire career. A common question that comes up in almost every software design centers around how do we build a piece of software to achieve &amp;ldquo;100%&amp;rdquo; availability?</description>
+    </item>
     
     <item>
       <title>Are you there? More than just availability...</title>
