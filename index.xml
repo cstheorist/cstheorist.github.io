@@ -6,10 +6,19 @@
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 07:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What is a Monolith</title>
+      <link>https://theorize.co/post/whatisamonolith/</link>
+      <pubDate>Sun, 31 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/whatisamonolith/</guid>
+      <description>I have worked on a large number of projects of all different shapes and sizes. Since I have worked on many existing code bases a common question I will be asked is: &amp;ldquo;can we break down our monolith&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>Building for failure in a distributed world - taking dependencies robustly</title>
