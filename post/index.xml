@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 May 2020 07:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dealing with FUD and making the tough choices</title>
+      <link>https://theorize.co/post/dealingwithfud/</link>
+      <pubDate>Sun, 07 Jun 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/dealingwithfud/</guid>
+      <description>Getting large changes rolled out within an organization or with customers is often not easy. One particular set of changes are those that fundamentally change the way something that is already deployed functions.</description>
+    </item>
     
     <item>
       <title>What is a Monolith</title>
