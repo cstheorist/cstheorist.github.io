@@ -6,10 +6,19 @@
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 07:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Maintaining our Technology Garden</title>
+      <link>https://theorize.co/post/consciousdeviation/</link>
+      <pubDate>Sun, 21 Jun 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/consciousdeviation/</guid>
+      <description>I have worked in organizations of many different shapes and sizes. Some as small as just myself, in startups including tens of engineers and still others that have included tens of thousands of engineers.</description>
+    </item>
     
     <item>
       <title>Learning from Failures or Successes?</title>
