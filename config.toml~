@@ -14,7 +14,6 @@ about = "A place for thinking out loud"
 linkedin = "https://www.linkedin.com/in/jeremiah-brazeau-17282b3/"
 email = "theorize.co@gmail.com"
 analytics = true
-commento = true
 
 [params.hero]
 enabled = true

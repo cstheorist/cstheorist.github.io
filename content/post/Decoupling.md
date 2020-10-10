@@ -83,7 +83,7 @@ One under-appreciated value of this specific pattern is that producers can also 
 
 What I really want to make people aware of are these asynchronous forms of data movement but to also remind developers of the importance of designing clean and repeatable interfaces just like we would a REST API.  Once we have defined a pattern in which we can move data around PLEASE take the time to document the format of data that transits the wire, think about how you will version these "documents", and consider simple solutions that are easy for your customer to reason about.
 
-I have plenty of additional thoughts rolling around having written this down: #MicroBatching, #BackwardsCompatiblity #FitnessFunctions
+I have plenty of additional thoughts rolling around having written this down: #MicroBatching, #BackwardsCompatibility #FitnessFunctions
 
 Books on my shelf related to this topic:
 
@@ -92,3 +92,4 @@ Books on my shelf related to this topic:
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cstheorist-20&language=en_US&marketplace=amazon&region=US&placement=B00T3N7XB4&asins=B00T3N7XB4&linkId=f627f6ecb3ebfc61e10e043cee2ad483&show_border=true&link_opens_in_new_window=true"></iframe>
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cstheorist-20&language=en_US&marketplace=amazon&region=US&placement=B01LZQGIIC&asins=B01LZQGIIC&linkId=447a9ff5d6ddefbf0db0d500c22057ff&show_border=true&link_opens_in_new_window=true"></iframe>
 {{< /rawhtml>}}
+

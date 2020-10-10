@@ -2,20 +2,24 @@
 {{ if eq .Section "post"}}
 	<section class="container text-justified mt-3">
 	  <h2 class="font-weight-bold">{{.Title}}</h2>
-	  <small class="text-secondary mb-5">Posted on {{ .PublishDate.Format "January 2, 2006" }} | {{.ReadingTime}} minute read</small>
+	  <small class="text-secondary mb-5">Posted on {{ .PublishDate.Format "January 2, 2006" }} | 
+		    {{.ReadingTime}} minute read | 
+	            Share via 
+		       <a title='email' href='mailto:?subject={{.Title}}&body={{.Permalink}}'><button class='btn btn-sm btn-light'>{{ ":email:" | emojify }}</button></a>
+	               <!--<a title='twitter'><button class='btn btn-light btn-sm'>{{":bird:" | emojify }}</button></a>-->
+	  </small>
 		  {{ .Content }}
 	  <hr>
-	  <div>Share via
-	  <a title='email' href='mailto:?subject={{.Title}}&body={{.Permalink}}'><button class='btn btn-sm btn-light'>{{ ":email:" | emojify }}</button></a>
-	  <!--<a title='twitter'><button class='btn btn-light btn-sm'>{{":bird:" | emojify }}</button></a>-->
-	  </div>
-	  <br>
 	  <code>Tags:
 	  {{- range .Params.tags -}}
 	      <span class='badge badge-dark'><a class='text-white' href='{{ "tags/" | absURL }}{{ . | lower }}'>{{ . }}</a></span>
 	  {{ end }}
 	  </code>
 	  <br>
+	    {{ if .Site.Params.commento }}
+	      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+              <div id="commento"></div>
+	    {{end}}
 	    {{ if .Site.Params.disqus }}
 	      {{ template "_internal/disqus.html" . }}
 	    {{end}}
