@@ -10,21 +10,26 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="generator" content="Hugo 0.58.3" />
-	<link rel="stylesheet" type="text/css" href='http://theorize.co/css/bootstrap.min.css'>
+	<link rel="stylesheet" type="text/css" href='https://theorize.co/css/bootstrap.min.css'>
 	<title>Keeping Systems Decoupled</title>
 </head>
 <body>
       <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
-    <a href='http://theorize.co/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
-    <a href='http://theorize.co/about'><span class="btn btn-sm btn-outline-secondary">About</span></a>
-    <a href='http://theorize.co/post'><span class="btn btn-sm btn-outline-success">Blog</span></a>
-    <a href='http://theorize.co/tags'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+    <a href='https://theorize.co/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+    <a href='https://theorize.co/about'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+    <a href='https://theorize.co/post'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+    <a href='https://theorize.co/tags'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
 </nav>
 
 
 	<section class="container text-justified mt-3">
 	  <h2 class="font-weight-bold">Keeping Systems Decoupled</h2>
-	  <small class="text-secondary mb-5">Posted on May 20, 2020 | 10 minute read</small>
+	  <small class="text-secondary mb-5">Posted on May 20, 2020 | 
+		    10 minute read | 
+	            Share via 
+		       <a title='email' href='mailto:?subject=Keeping%20Systems%20Decoupled&body=https%3a%2f%2ftheorize.co%2fpost%2fdecoupling%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
+	               
+	  </small>
 		  
 
 <p>A common problem I have been asked to solve on a variety of the systems I have worked on is how to move data between independent components (different monoliths, micro-services, databases, etc).  My involvement occurred after many of these systems had grown organically as their respective businesses grew and expanded.  The result was that to move data between components many point-2-point solutions were created.  When integrating 2 components for the first time this makes sense but as the number of systems we attempt to connect together grows it is important to watch for some signs that things are turning into a &ldquo;Big Ball of Mud.&rdquo;  There are some early warning signs (behaviors) that this is happening:</p>
@@ -117,7 +122,7 @@
 
 <p>What I really want to make people aware of are these asynchronous forms of data movement but to also remind developers of the importance of designing clean and repeatable interfaces just like we would a REST API.  Once we have defined a pattern in which we can move data around PLEASE take the time to document the format of data that transits the wire, think about how you will version these &ldquo;documents&rdquo;, and consider simple solutions that are easy for your customer to reason about.</p>
 
-<p>I have plenty of additional thoughts rolling around having written this down: #MicroBatching, #BackwardsCompatiblity #FitnessFunctions</p>
+<p>I have plenty of additional thoughts rolling around having written this down: #MicroBatching, #BackwardsCompatibility #FitnessFunctions</p>
 
 <p>Books on my shelf related to this topic:</p>
 
@@ -130,14 +135,13 @@
 
 
 	  <hr>
-	  <div>Share via
-	  <a title='email' href='mailto:?subject=Keeping%20Systems%20Decoupled&body=http%3a%2f%2ftheorize.co%2fpost%2fdecoupling%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
-	  
-	  </div>
-	  <br>
 	  <code>Tags:
 	  </code>
 	  <br>
+	    
+	      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+              <div id="commento"></div>
+	    
 	    
 	</section>
 
@@ -146,7 +150,8 @@
       </div>
   </body><footer>
   <div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
-    <small> Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+    <small> Any opinions expressed on this site are my own </small> </br>
+    <small> Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Derived from Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
   </div>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5XCESZV5Z"></script>

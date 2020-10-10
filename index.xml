@@ -2,39 +2,175 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pondering new theories every day!</title>
-    <link>http://theorize.co/</link>
+    <link>https://theorize.co/</link>
     <description>Recent content on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2020 07:49:43 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 07:22:59 -0400</lastBuildDate>
     
-	<atom:link href="http://theorize.co/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theorize.co/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Driving Ownership</title>
+      <link>https://theorize.co/post/drivingownership/</link>
+      <pubDate>Tue, 23 Jun 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/drivingownership/</guid>
+      <description>By the end of this article I hope that as the reader you agree with me on the connection between the following three terms:</description>
+    </item>
+    
+    <item>
+      <title>Maintaining our Technology Garden</title>
+      <link>https://theorize.co/post/consciousdeviation/</link>
+      <pubDate>Sun, 21 Jun 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/consciousdeviation/</guid>
+      <description>I have worked in organizations of many different shapes and sizes. Some as small as just myself, in startups including tens of engineers and still others that have included tens of thousands of engineers.</description>
+    </item>
+    
+    <item>
+      <title>Learning from Failures or Successes?</title>
+      <link>https://theorize.co/post/learnsuccessorfailure/</link>
+      <pubDate>Sun, 07 Jun 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/learnsuccessorfailure/</guid>
+      <description>As I, like many, are learning how to change their work style (and work life balance) while functioning from home, helping to school my kids at home, it got me thinking a little bit about what to optimize, favor, and focus on.</description>
+    </item>
+    
+    <item>
+      <title>Dealing with FUD and making the tough choices</title>
+      <link>https://theorize.co/post/dealingwithfud/</link>
+      <pubDate>Sat, 06 Jun 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/dealingwithfud/</guid>
+      <description>Getting large changes rolled out within an organization or with customers is often not easy. One particular set of changes are those that fundamentally change the way something that is already deployed functions.</description>
+    </item>
+    
+    <item>
+      <title>What is a Monolith</title>
+      <link>https://theorize.co/post/whatisamonolith/</link>
+      <pubDate>Sun, 31 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/whatisamonolith/</guid>
+      <description>I have worked on a large number of projects of all different shapes and sizes. Since I have worked on many existing code bases a common question I will be asked is: &amp;ldquo;can we break down our monolith&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Building for failure in a distributed world - taking dependencies robustly</title>
+      <link>https://theorize.co/post/buildingforfailure/</link>
+      <pubDate>Sat, 30 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/buildingforfailure/</guid>
+      <description>I have been working on systems that customers rely on 24x7 my entire career. A common question that comes up in almost every software design centers around how do we build a piece of software to achieve &amp;ldquo;100%&amp;rdquo; availability?</description>
+    </item>
+    
+    <item>
+      <title>Are you there? More than just availability...</title>
+      <link>https://theorize.co/post/areyouthere/</link>
+      <pubDate>Thu, 28 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/areyouthere/</guid>
+      <description>Technology is constantly changing all around us. Could you imagine making a phone call today and missing every other word? What is the voice of the individual on the other end was delayed by 10 seconds?</description>
+    </item>
+    
+    <item>
+      <title>Some thoughts on Negative Caching</title>
+      <link>https://theorize.co/post/negativecaching/</link>
+      <pubDate>Wed, 27 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/negativecaching/</guid>
+      <description>Over the past few years I have been working on APIs that are public facing. The implication is that I have little control over what messages may hit a service that I build.</description>
+    </item>
+    
+    <item>
+      <title>The Rule of 2AM</title>
+      <link>https://theorize.co/post/theruleof2am/</link>
+      <pubDate>Tue, 26 May 2020 06:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/theruleof2am/</guid>
+      <description>The rule of 2AM goes like this:
+ As a developer when you are about to submit your pull request ask yourself, will everyone on my team be able to understand what the logic I have just implemented does at 2AM within 15 minutes?</description>
+    </item>
+    
+    <item>
+      <title>Minimizing complexity over the life of a system - Part 3</title>
+      <link>https://theorize.co/post/complexityovertime3/</link>
+      <pubDate>Mon, 25 May 2020 10:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/complexityovertime3/</guid>
+      <description>In my previous post I called out 3 areas that stood out to me as adding complexity over time to long lived systems and dug into the first of those points (using a technology without asking WHY it was the right tool).</description>
+    </item>
+    
+    <item>
+      <title>Minimizing complexity over the life of a system - Part 2</title>
+      <link>https://theorize.co/post/complexityovertime2/</link>
+      <pubDate>Sun, 24 May 2020 10:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/complexityovertime2/</guid>
+      <description>In my previous post I called out 3 areas that stood out to me as adding complexity over time to long lived systems and dug into the first of those points (using a technology without asking WHY it was the right tool).</description>
+    </item>
+    
+    <item>
+      <title>Learning in layers</title>
+      <link>https://theorize.co/post/visuallearningtechniques/</link>
+      <pubDate>Sun, 24 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/visuallearningtechniques/</guid>
+      <description>While back in school I spent time studying the human visual system and worked on attempting to model that system in software through the creation of various Neural Networks.</description>
+    </item>
+    
+    <item>
+      <title>Minimizing complexity over the life of a system</title>
+      <link>https://theorize.co/post/complexityovertime/</link>
+      <pubDate>Sat, 23 May 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/complexityovertime/</guid>
+      <description>When building systems I have come to recognize that after some period of time (years) that the complexity of these systems increases significantly.</description>
+    </item>
+    
+    <item>
+      <title>Real Time != Real Fast</title>
+      <link>https://theorize.co/post/realtimenotrealfast/</link>
+      <pubDate>Thu, 21 May 2020 07:49:43 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/realtimenotrealfast/</guid>
+      <description>Ok, a pet peeve of mine and something that if you ever want to get in a heated debate with me about - just tell me you need some data in real time and presume that I have any clue what you mean.</description>
+    </item>
+    
+    <item>
+      <title>Influence Change: Part1</title>
+      <link>https://theorize.co/post/influencechangepart1/</link>
+      <pubDate>Wed, 20 May 2020 19:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/influencechangepart1/</guid>
+      <description>Something I love doing is going into a new environment to learn. I have a fairly broad set of interests which helps but I love to approach every situation, even those that seem familiar, as an opportunity to walk away knowing something I hadn&amp;rsquo;t known going in.</description>
+    </item>
+    
+    <item>
       <title>Keeping Systems Decoupled</title>
-      <link>http://theorize.co/post/decoupling/</link>
+      <link>https://theorize.co/post/decoupling/</link>
       <pubDate>Wed, 20 May 2020 07:49:43 -0400</pubDate>
       
-      <guid>http://theorize.co/post/decoupling/</guid>
+      <guid>https://theorize.co/post/decoupling/</guid>
       <description>A common problem I have been asked to solve on a variety of the systems I have worked on is how to move data between independent components (different monoliths, micro-services, databases, etc).</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://theorize.co/about/</link>
+      <link>https://theorize.co/about/</link>
       <pubDate>Sun, 17 May 2020 15:08:03 -0400</pubDate>
       
-      <guid>http://theorize.co/about/</guid>
+      <guid>https://theorize.co/about/</guid>
       <description>I am Jeremiah Brazeau; a software developer, pilot, pianist, and general hobbyist. In my career I have worked for small startups, co-founding an Eletronic Health Records company around 2000, that unfortunatly was a little ahead of it&amp;rsquo;s time, and working at Kiva Systems (little orange robots) which was acquired by Amazon.</description>
     </item>
     
     <item>
       <title>Starting a new blog...</title>
-      <link>http://theorize.co/post/my-first-post/</link>
+      <link>https://theorize.co/post/my-first-post/</link>
       <pubDate>Sun, 17 May 2020 14:57:25 -0400</pubDate>
       
-      <guid>http://theorize.co/post/my-first-post/</guid>
+      <guid>https://theorize.co/post/my-first-post/</guid>
       <description>I have decided to take some time to start a new blog. My goal of setting up this space is to allow me to conver topics that I find generally interesting and more importantly to give me a place to simply write things down.</description>
     </item>
     

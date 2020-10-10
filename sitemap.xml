@@ -3,36 +3,127 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://theorize.co/post/decoupling/</loc>
+    <loc>https://theorize.co/post/drivingownership/</loc>
+    <lastmod>2020-06-23T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/</loc>
+    <lastmod>2020-06-23T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/</loc>
+    <lastmod>2020-06-23T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/consciousdeviation/</loc>
+    <lastmod>2020-06-21T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/learnsuccessorfailure/</loc>
+    <lastmod>2020-06-07T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/dealingwithfud/</loc>
+    <lastmod>2020-06-06T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/whatisamonolith/</loc>
+    <lastmod>2020-05-31T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/buildingforfailure/</loc>
+    <lastmod>2020-05-30T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/areyouthere/</loc>
+    <lastmod>2020-05-28T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/tags/architecture-patterns/</loc>
+    <lastmod>2020-05-27T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/tags/service-protection/</loc>
+    <lastmod>2020-05-27T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/negativecaching/</loc>
+    <lastmod>2020-05-27T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/tags/</loc>
+    <lastmod>2020-05-27T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/tags/what-have-you-seen/</loc>
+    <lastmod>2020-05-27T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/theruleof2am/</loc>
+    <lastmod>2020-05-26T06:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/complexityovertime3/</loc>
+    <lastmod>2020-05-25T10:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/complexityovertime2/</loc>
+    <lastmod>2020-05-24T10:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/visuallearningtechniques/</loc>
+    <lastmod>2020-05-24T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/complexityovertime/</loc>
+    <lastmod>2020-05-23T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/realtimenotrealfast/</loc>
+    <lastmod>2020-05-21T07:49:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/influencechangepart1/</loc>
+    <lastmod>2020-05-20T19:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/decoupling/</loc>
     <lastmod>2020-05-20T07:49:43-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://theorize.co/</loc>
-    <lastmod>2020-05-20T07:49:43-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://theorize.co/post/</loc>
-    <lastmod>2020-05-20T07:49:43-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://theorize.co/about/</loc>
+    <loc>https://theorize.co/about/</loc>
     <lastmod>2020-05-17T15:08:03-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://theorize.co/post/my-first-post/</loc>
+    <loc>https://theorize.co/post/my-first-post/</loc>
     <lastmod>2020-05-17T14:57:25-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://theorize.co/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>http://theorize.co/tags/</loc>
+    <loc>https://theorize.co/categories/</loc>
   </url>
   
 </urlset>

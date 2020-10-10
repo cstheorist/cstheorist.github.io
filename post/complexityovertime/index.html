@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="description" content=''>
+	
+		
+		<meta name="keywords" content=''>
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Hugo 0.58.3" />
+	<link rel="stylesheet" type="text/css" href='https://theorize.co/css/bootstrap.min.css'>
+	<title>Minimizing complexity over the life of a system</title>
+</head>
+<body>
+      <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
+    <a href='https://theorize.co/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+    <a href='https://theorize.co/about'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+    <a href='https://theorize.co/post'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+    <a href='https://theorize.co/tags'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+</nav>
+
+
+	<section class="container text-justified mt-3">
+	  <h2 class="font-weight-bold">Minimizing complexity over the life of a system</h2>
+	  <small class="text-secondary mb-5">Posted on May 23, 2020 | 
+		    8 minute read | 
+	            Share via 
+		       <a title='email' href='mailto:?subject=Minimizing%20complexity%20over%20the%20life%20of%20a%20system&body=https%3a%2f%2ftheorize.co%2fpost%2fcomplexityovertime%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
+	               
+	  </small>
+		  <p>When building systems I have come to recognize that after some period of time (years) that the complexity of these systems increases significantly.  This probably sounds obvious and it is easy to point at a variety of reasons such as making the argument that the scope of the system (set of features) has increased.  While this may be true I feel it is worth asking if there are some underlying choices (key points in time) that if approached differently would have reduced the complexity that was eventually observed.  If we are able to discover some common points in time then ensuring we look at making well thought out choices at these times can save us significant work later on.  In thinking about this myself there are a few that stand out to me:</p>
+
+<ul>
+<li>building a system using some underlying technology without asking WHY it is the right tool for the job.</li>
+<li>not thinking about where to build partitions (layers) within the solution space.</li>
+<li>over-simplifying our transactional model (presuming the digital and real worlds move in lock step).</li>
+</ul>
+
+<p>Over the next few days I intend to spend some more time writing my thoughts on each of these points.  For today I am going to focus on the first.</p>
+
+<p><strong>Building a system using some underlying technology without asking WHY it is the right tool for the job.</strong></p>
+
+<p>This is derived from the &ldquo;Law of the instrument&rdquo; and is a form of cognitive bias where we tend to over-rely on familiar tools.  In Software Engineering this might be the use of a Relational Datastore or it could be the use of Kafka for all forms of data movement.  It is important before going any further that I am not making an argument that we should NOT use the tools for which we are most familiar (in fact early on in a broad set of projects I think that leveraging the tools you know can allow focus on the problem for which we are delivering a solution).  What I am going to argue is that as engineers we must ensure we understand (a) WHY we are using the tool and (b) consider how we can ensure usage of the tool doesn&rsquo;t leak into our solution so that we can swap out technologies at some later point in time.</p>
+
+<p>First, let us consider the consequence of various decisions and group such decisions into one of two buckets:</p>
+
+<ul>
+<li>One-way doors are those decisions that once implemented and deployed, should we not like the results, there is no un-doing that decision.</li>
+<li>Two-way doors are those decisions that once implemented and deployed, should we not like the result, we simply walk back to the previous state and try something else.</li>
+</ul>
+
+<p>Next, consider that when building a system there are both known and unknown consequences.  My position here is that utilizing a technologies (such as a Relational datastore) <em>without</em> thinking about WHY you are using it will at some point unknowingly lead you through a one-way door.  Why is this?</p>
+
+<p>I contend that there are two root problems that occur:</p>
+
+<ul>
+<li>As engineers we don&rsquo;t write down the destination.  As a result we unknowingly walk through a one-way door.</li>
+<li>As engineers we fail to consider that once we have selected a technology the full capabilities of the technology <em>will</em> be leveraged by some engineer on our team.  While we may have known that we might likely have to re-visit a decision (known risk) we still end up on the other side of a one-way door.  For example, we may select a Relational Database because it is easy to setup in our environment and we have experience with it even though we know we don&rsquo;t want to use transactions because we believe there will be future scalability problems.  Inevitably a feature creeps in, we use a transaction, and our ability to scale (or select some other technology in the future) has just become significantly more complicated.</li>
+</ul>
+
+<p>So, why are these such a big deal and how do they manifest in problems down the line?</p>
+
+<p><strong>Only looking at what is in front of us.</strong></p>
+
+<p>Have you ever heard the proverb that if you don&rsquo;t know where you are going then any road will lead you there?  As engineers we are often ready to jump straight into coding.  Because we are early on in the lifecycle of a project we might select tools that allow us to focus on iterating quickly over the functional requirements (business value).  We talk about the MVP solution and delivering something to market quickly.  Everything seems to be going well and with each Sprint Demo the product organization gets excited about presenting the solution to customers.  Because we recognize this is an MVP solution we may select early customers to work through a Pilot or Beta based on how we have tested our system to date.  This provides us with more confidence that everything has gone well thus far.  Unknown to us however is that some of the technologies we selected that enabled us to iterate quickly are actually small mines that are waiting to explode.  As we move from Beta to a Generally Available release customers begin to onboard.  At some point down the line we get a call about performance, then a second, and maybe a third.  To solve for the problems that we observe we tack on additional logic (maybe we add more caching, we start building additional pre-computed views of data, etc).  After some time we look back at what was once a fairly simple system and recognize what has manifested itself is a big ball of mud.  How did we get here and could this have played out in a different way?  What if we had spent a little more time thinking about where we were going (or at least pick our top 3 destinations)?</p>
+
+<p>As engineers it is all to easy to focus just on the business requirements.  These capabilities demo well to customers and show that we are making forward progress at solving their problems.  As a result we often select technologies that are optimized for these initial requirements and fail to recognize or consider the consequences of those choices against our destination.  Because we don&rsquo;t write these things down as new requirements come in we stick with those early choices.  I see this play out frequently when it comes to thinking about Non-Functional Requirements (those things that are generally hidden from a customers point of view).  These include aspects like testability, scalability, availability, etc.  For example, we might select our Relational Database but then not consider the complexity and expense of achieving a Zero-Downtime upgrade or Zero-Downtime schema change.  We might select Kafka as technology for moving around events but not consider our cost-to-serve model as the number of events grows over time.  We might select a NoSQL store and find agility by not having to specify a schema only to recognize we have placed a great deal of un-intended complexity on customers.</p>
+
+<p>The solution here I think is fairly straightforward.  On any project select the top 3-5 &ldquo;-ilities.&rdquo;  Agree with your product owner that those must be measured throughout the development process.  When selecting technologies and making design decisions weigh those decisions not just against the functional requirements that you are aware of but against these Non-Functional requirements as well.  The end result will lead to a better understanding of WHY we believe a technology is suited for the job at hand.</p>
+
+<p><strong>Technology and Feature leakage</strong></p>
+
+<p>Let us assume for a moment that we agreed to our destination and a few non-functional requirements.  In the end we still believe that use of a well understood technology is the right choice to get us moving but we do have some questions if it will be the right technology for the long term.  As a result we convince ourselves that we will just be careful in how we use the technology now.  At this point we are dealing with a Known risk.</p>
+
+<p>&hellip; Time passes - 12 months later &hellip;</p>
+
+<p>What has happened?  Did we only use the technologies feature set as we originally envisioned?  I give it a <sup>50</sup>&frasl;<sub>50</sub> chance and suspect that at least half of the time we have leveraged at least one capability that makes pivoting later more difficult.  The good news here is that building a good abstraction to only enforce the intended behaviors is a fairly easy answer to the problem.  The bad news is enforcing abstractions are hard (but they are better then doing nothing).  A general rule that I like to follow is to not only build an abstraction but to force myself to back it by at least 2 implementations.  This may sound counter-intuitive as it seems to imply twice the work - but then again that is the point.  By building two solutions behind an interface then it takes twice as much work to change that interface which forces us to think long and hard about using that next &ldquo;feature&rdquo; of some underlying technology.  Taking this approach creates a wanted pressure of avoiding un-wanted leakage.</p>
+
+<p>Two important points to consider if going down this path:</p>
+
+<ul>
+<li>we need not worry about building out a robust control plane for this second technology as the point isn&rsquo;t to deploy with both, the key is to pick a 2nd technology that makes it hard to use features you explicitly want to avoid and ensure that you run tests against that data store.<br /></li>
+<li>I posit that simply testing that specific features are not leveraged is insufficient for enforcement because the number of things that we must test &ldquo;are not&rdquo; going to happen is brittle and well intentioned engineers will eventually delete such tests.</li>
+</ul>
+
+<p>With these two tools in our toolbelt I believe better outcomes can be had over the long haul of a system while also allowing for fast iterations and a focus on incremental deliveries.</p>
+
+<p>Happy Building!</p>
+
+	  <hr>
+	  <code>Tags:
+	  </code>
+	  <br>
+	    
+	      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+              <div id="commento"></div>
+	    
+	    
+	</section>
+
+
+
+      </div>
+  </body><footer>
+  <div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
+    <small> Any opinions expressed on this site are my own </small> </br>
+    <small> Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Derived from Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+  </div>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5XCESZV5Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M5XCESZV5Z');
+    </script>
+  
+</footer>
+<div>
+</div>
+</html>
