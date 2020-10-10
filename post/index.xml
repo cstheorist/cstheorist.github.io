@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2020 07:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Innovating outside the box</title>
+      <link>https://theorize.co/post/innovatingoutsidethebox/</link>
+      <pubDate>Sat, 10 Oct 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/innovatingoutsidethebox/</guid>
+      <description>It has been a while since I last posted. There are a number of reasons for this including recently making the decision to take on a new role as CTO at Twilio.</description>
+    </item>
     
     <item>
       <title>Driving Ownership</title>
