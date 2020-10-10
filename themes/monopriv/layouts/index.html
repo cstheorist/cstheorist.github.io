@@ -5,7 +5,7 @@
         {{partial "search.html" .}}
     {{end}}
 	<div class="card-columns mt-3">
-    {{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections).ByTitle }}
+    {{ range first 7 (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
 				<div class="bg-light card">
 					<div class="card-body">
 					  <h5 class="font-weight-bold card-title">{{.Title}}</h5>
@@ -19,8 +19,7 @@
 </section>
 <section class="container text-center mt-2">
     <h5 class="font-weight-bold card-title">Books I am currently reading...</h5>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=cstheorist-20&marketplace=amazon&region=US&placement=B075RR1XVG&asins=B075RR1XVG&linkId=8d7e7e17372fefe3f3e8788ef1e986d3&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
-    </iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cstheorist-20&language=en_US&marketplace=amazon&region=US&placement=1942788762&asins=1942788762&linkId=f4fa29ae95f38c67c63a5a9ac0f63af9&show_border=true&link_opens_in_new_window=true"></iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cstheorist-20&language=en_US&marketplace=amazon&region=US&placement=B075JQ5TY3&asins=B075JQ5TY3&linkId=3d5af718162373c9dce98d8b606a1e16&show_border=true&link_opens_in_new_window=true"></iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cstheorist-20&language=en_US&marketplace=amazon&region=US&placement=B004J4WKEC&asins=B004J4WKEC&linkId=6d721a443d882e7cca61c92403d95e54&show_border=true&link_opens_in_new_window=true"></iframe>
 </section>
 {{end}}

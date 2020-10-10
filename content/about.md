@@ -8,7 +8,7 @@ I am Jeremiah Brazeau; a software developer, pilot, pianist, and general hobbyis
 
 Outside of work I find myself occupied by the need to constantly learning and trying new things.  In general I attempt to take on something new each year and over the years have earned my pilots license, jumped out of planes, took time to ride a motorcycle, attempted to learn to play the violin, learned to build furniture, and more.  I find that having a hobby and learning outside of work helps me to continously approach problems with a fresh and creative perspective.
 
-At present I am employeed as a Distinguished Architect and SVP focused on helping teams solve complex business and algorithmic problems in creating Personalized Consumer Journeys (B2B2C).  I run an architecture team that has helped to drive a unifying architectural vision across multiple monolithic software stacks with a focus on our customers and their ability to drive Consumer Engagement.
+At present I am employeed as a Distinguished Architect and SVP at Salesforce.com focused on helping teams solve complex business and algorithmic problems in creating Personalized Consumer Journeys (B2B2C).  I run an architecture team that has helped to drive a unifying architectural vision across multiple monolithic software stacks with a focus on our customers and their ability to drive Consumer Engagement.
 
 #### Creative Thinking ####
 
