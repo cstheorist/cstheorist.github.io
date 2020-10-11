@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 07:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Strategy and Proposal for Assessing Cloud Service Readiness</title>
+      <link>https://theorize.co/post/servicereadiness/</link>
+      <pubDate>Sun, 11 Oct 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/servicereadiness/</guid>
+      <description>Throughout my career I have been held accountable for the maturity and quality of code deployed into production. When I was first coming out of school this was fairly easy to assess (did the code I write ever cause a problem and when it did learn from it).</description>
+    </item>
     
     <item>
       <title>Innovating outside the box</title>
