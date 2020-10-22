@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="description" content=''>
+	
+		
+		<meta name="keywords" content=''>
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Hugo 0.58.3" />
+	<link rel="stylesheet" type="text/css" href='https://theorize.co/css/bootstrap.min.css'>
+	<title>Getting Strategic - One of many roles of an Architect</title>
+</head>
+<body>
+      <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
+    <a href='https://theorize.co/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+    <a href='https://theorize.co/about'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+    <a href='https://theorize.co/post'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+    <a href='https://theorize.co/tags'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+</nav>
+
+
+	<section class="container text-justified mt-3">
+	  <h2 class="font-weight-bold">Getting Strategic - One of many roles of an Architect</h2>
+	  <small class="text-secondary mb-5">Posted on October 21, 2020 | 
+		    11 minute read | 
+	            Share via 
+		       <a title='email' href='mailto:?subject=Getting%20Strategic%20-%20One%20of%20many%20roles%20of%20an%20Architect&body=https%3a%2f%2ftheorize.co%2fpost%2fgettingstrategic%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
+	               
+	  </small>
+		  <p>Since taking on my new role a number of folks have been pinging me to say congratulations (and thank you for that!) - but probably the 2nd biggest message I get goes something along the lines of how did you grow your career and what have you found yourself doing?  While there are likely a lot of detailed answers I can attempt to give after giving this some thought it felt like it would be worth attempting to boil up a bunch of details into one of the most important outcomes that I have found myself driving over many years:</p>
+
+<ul>
+<li>Having a strong opinion and consistently communication of <strong>the destination</strong>.</li>
+<li>Get everyone speaking the same <strong>language</strong>.</li>
+<li>Ensuring that when we get to the destination that we got there with <strong>deliberate</strong> focus and not <em>accidental</em> success.<br /></li>
+<li>Make visible (and automated) <strong>the data</strong>.</li>
+</ul>
+
+<p><strong>Where shall we go today - setting the destination</strong></p>
+
+<p>One of the first steps I have found is that it is important to set a clear North Star direction.  This at times can be easier said then done but there are some important aspects that I have found a North Star needs to convey:</p>
+
+<ul>
+<li>It needs not only be a destination but one that is definable so that people can get their heads around it.  Imagine, for a second if I said I want to go on vacation.  You might ask where and I could say something like &ldquo;an island.&rdquo;  While that is in fact a destination it doesn&rsquo;t provide enough specification for others to take the next step and make progress.  In large organizations it might be like every team booking tickets to an island but few teams will land on the same island.  Instead we want to give something more specific like I want to go to Aruba.</li>
+<li>It needs to be under specified.  If we get to specific then it seems like we already know everything that needs to get done.  At this point it likely isn&rsquo;t a North Star but rather some form of design document.  Unfortunately the systems we build today are likely to complex and spending this much time up front to lay out all of the details is very likely to lead to wasted opportunity at getting something shipped to customers.  This is what can make a North Star difficult.</li>
+<li>It can focus on the mechanisms that will help us get there.  Something I have appreciated is having leaders take thought in how an organization will operationalize taking action on a bold vision.  Spending some time early thinking about the culture of an organization and determining how you will rally everyone to take steps towards it can be extremely helpful and useful.  From Thomas Edison: &ldquo;A good intention, with a bad approach, often leads to a poor result.&rdquo;  That quote seems fitting as simply writing down a destination won&rsquo;t get everyone there - in other words good intentions are not enough.</li>
+</ul>
+
+<p>I am sure I could spend much more time talking about North Star efforts but I will leave with a quote from Lewis Caroll: &ldquo;If you don&rsquo;t know where you&rsquo;re going, any road will get you there.&rdquo;</p>
+
+<p><strong>The language that binds us</strong></p>
+
+<p>An all to common occurrence, especially as an organization grows, is to become un-intentionally sloppy with language (ok perhaps some people intentionally are sloppy with the words they use but inevitably a term will grow to mean too many different things).  For example; if I were to say that our technical solutions are multi-tenant I know that those reading this post will fall into different camps of what that term means.  Some might assume it implies a mixing of data within a process.  Others might assume mixing of data within a data store.  Some might assume tenancy itself refers to different internal users (micro-services) while others might say it implies different customers of the systems we build.  And some might say it implies any of the above.  The issue with language is that we need to understand when terms become ambiguous in their use, even with some reasonable context, such that it detracts from the important problems to be solved.  In effect we will have created some amount of accidental work that now needs to be done each time the term is seen (accidental work is work that is artificial work that is done while solving a problem and more on that in the next section).</p>
+
+<p>For me language often quickly bubbles to the top because it allows to many things to chance if not tackled and aligned.  There are many different methods to do this and I have used many different tactics.  For example; when working in the e-commerce space during an Event Storming sessions it became obvious that a broad set of teams were overloading the term &ldquo;order&rdquo; (it could mean the moment that you placed the <em>order</em> on a website OR it could mean the audit trail of steps as the <em>order</em> moved through a warehouse).  In this specific case I banned the term from the remainder of the discussion - I believe I ended up calling these things Fred and Bob - the key was that the discussion could move on without constantly attempting to ask which order was being discussed.  More generally I have used Domain Driven Design as a framework and Event Storming as a process of helping identify top level contexts and focused to create a well defined language within those contexts.</p>
+
+<p>Language isn&rsquo;t just important when thinking about what to name things (in our APIs or data stores) it is also important in how we communicate guardrails, requirements, and more.  For example - quick - what does it mean to create focus on quality engineering?  The takeaway here is to make sure to use language thoughtfully and look out for those cases where individuals may not be using the term to mean the same thing.</p>
+
+<p><strong>Deliberate movements&hellip;</strong></p>
+
+<p>To start this section let me go back to around 1986.  It was around this time that Fred Brooks published &ldquo;No Silver Bullet&rdquo; where he argued that most productivity gains in Software came from removing &ldquo;artificial barriers that have made the accidental tasks inordinately hard.&rdquo;  In effect Brooks broke the path to solving a problem down into 2 categories (a) the work that was essential to solving the problem and (b) the work that was being done accidently.  While at the time Brooks made arguments for potential improvements through the use of higher level languages (big shout out to ADA), Object-Oriented thinking, and AI (yes - AI wasn&rsquo;t invented in the past few years - it has actually been around for decades) the abstractions that have been built out and the scale at which the systems we build are used have created entirely new opportunities to create &ldquo;accidental&rdquo; complexity.  The argument I would make today that my role is to get everyone to recognize when this is happening and as a result be DELIBERATE in how to invest to properly ensure that accidental complexities do not lead in a downward spiral of not being able to continue to build and innovate on behalf of customers.</p>
+
+<p>What are some examples where teams may not be deliberate that are worth some extra attention?</p>
+
+<ul>
+<li>API definitions - especially the semantics that define the interaction pattern.  For example, if we only need information to be returned in an eventually consistent way BUT we create a read your own write synchronous API then we have bound ourselves to this contract.  Put another way, API contracts, once defined, create a constraint on future efforts and so being deliberate about those constraints is worth the attention.</li>
+<li>Build vs Buy decisions.  This one may not be as obvious but I have seen to many teams (and companies) determine early on that they should build something internally (either thinking that they can do better or save money).  There are some industry movements away from this (there is this thing called IaaS and the cloud which I heard about recently&hellip;).  None-the-less; most engineers like to build but the challenge is foreseeing the cost of owning and operating more.  Philosophically the first question I have always asked myself (my greedy optimization step) is if building the technology myself will directly benefit my customer.  If not I should first see if there is an acceptable means to purchase the need so I can spend more of my engineering time solving my customers problem(s).<br />
+
+<ul>
+<li><em>Side note</em>: If you think that you want to build it - you may consider focusing some engineering time making sure that the technology can be replaced at some point in the future.   If we are talking about a data store for example - spend more time up front focusing on how data is backed up and can be restored (maybe even to a different data store) and on a good Data Abstraction Layer in your software so that higher level concerns are not impacted should there come a time that it is worth changing.<br /></li>
+</ul></li>
+</ul>
+
+<p>In both examples above - it is possible that we can be successful and grow a business quickly - but if we don&rsquo;t keep an eye on how and where teams are spending there time we may suddenly find that the APIs we build are not constraining our future innovation (and at some point perhaps we should ask if there is a point in time we should fully version and deprecate those constraints).  Likewise on the Build vs Buy decision this can cut both ways - we may find that there is a point where the cost to purchase is simply to high OR that attempting to run (and scale) some technology is eating up innovation dollars that are not otherwise being spent serving your customer base.</p>
+
+<p>One important note - I have learned that while many teams feel comfortable to build something fewer teams feel comfortable suggesting that something be deprecated.  There are many reasons for this; some fear losing their job if the thing they work on goes away, some fear not being able to work on an equally interesting problem, and some simply feel passionate about the technology area.  Whatever the reason it is important that both senior management and senior IC&rsquo;s encourage identification and movement in such areas.  Like most things finding these areas and pivoting early can often lead to a multiplying savings later on.</p>
+
+<p><strong>Show me&hellip;the data</strong></p>
+
+<p>Like most things we can get everyone to agree to a language (and therefore identify problems and define metrics on how to measure outcomes, etc) but without data we are all still blind (throwing darts in a dark room).  This is where data comes in.  This isn&rsquo;t just any data (in fact random data can just create noise and confusion) but rather leveraging the outcomes above forcing a discussion around a language, agreed to cost function, and method of measuring returns and defining an agreed to set of inputs to help drive decisions.  Now this one can become tricky because there will be a natural tendency to conclude that to properly collect data everyone MUST push data to the same place (and I suppose at some level that is true in that data must be made visible) but my general philosophy here is that once we agree on the data then we should hold our leaders (and teams) accountable to be ready to present that data at any point in time.  That said; I also believe that whenever there is an ask such as this providing everyone with the right tools to make it possible (a well paved path) can be helpful.  Some of the guard rails that I like to focus on with organizations and teams is how to automate the production and visualization of this information.  Ideally the ability to collect data is not a burden.  So just like the previous discussion on accidental complexities we want to be careful that we don&rsquo;t accidently create a process or mechanics that add overhead to teams taking them away from solving the necessary complexities within their problem space.  If there is one thing I would leave everyone thinking about here beyond the simple outcome of always having data available it would be to automate&hellip;.automate&hellip;.automate.</p>
+
+<p><strong>Starting down the path to achieve technology domination</strong></p>
+
+<p>So what are some methods of doing this?  Are there tips or tricks that I (or others that choose to comment on this thread) would propose?  I started out this post with a goal is to focus on the outcomes that I find myself driving understanding that there are an infinite set of possible methods we could employ to get there.  So I am going to keep this section short and just hint at some tools that can be leveraged:</p>
+
+<ul>
+<li>Listen - then listen some more.  It is important to pick up on the nuances in how everyone is speaking.  This can be invaluable to build trust but is also important to identify where language within a group isn&rsquo;t as clear as others may think.</li>
+<li>Think about how mechanisms can shape and change behaviors.</li>
+<li>Write things down and force discussion, debate, and alignment.</li>
+<li>Be willing to be wrong.  When you are wrong be transparent and change course.</li>
+</ul>
+
+<p>That&rsquo;s it for now and I look forward to discussion and feedback from others on what they have found themselves doing as they have moved through their own careers!</p>
+
+	  <hr>
+	  <code>Tags:
+	  </code>
+	  <br>
+	    
+	      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+              <div id="commento"></div>
+	    
+	    
+	</section>
+
+
+
+      </div>
+  </body><footer>
+  <div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
+    <small> Any opinions expressed on this site are my own </small> </br>
+    <small> Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Derived from Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+  </div>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5XCESZV5Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M5XCESZV5Z');
+    </script>
+  
+</footer>
+<div>
+</div>
+</html>
