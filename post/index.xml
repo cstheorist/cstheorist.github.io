@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Pondering new theories every day!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2020 07:22:59 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2020 07:22:59 -0400</lastBuildDate>
     
 	<atom:link href="https://theorize.co/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Risky Business</title>
+      <link>https://theorize.co/post/riskybusiness/</link>
+      <pubDate>Sun, 01 Nov 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/riskybusiness/</guid>
+      <description>I have recently been thinking once again about how to continuously drive quality through improvements availability, securability and predictability in order to meet the needs and high expectations of developers and customers.</description>
+    </item>
     
     <item>
       <title>Getting Strategic - One of many roles of an Architect</title>
@@ -17,6 +26,15 @@
       <pubDate>Wed, 21 Oct 2020 07:22:59 -0400</pubDate>
       
       <guid>https://theorize.co/post/gettingstrategic/</guid>
+      <description>Since taking on my new role a number of folks have been pinging me to say congratulations (and thank you for that!</description>
+    </item>
+    
+    <item>
+      <title>Getting Strategic - One of many roles of an Architect</title>
+      <link>https://theorize.co/post/writing/gettingstrategic/</link>
+      <pubDate>Wed, 21 Oct 2020 07:22:59 -0400</pubDate>
+      
+      <guid>https://theorize.co/post/writing/gettingstrategic/</guid>
       <description>Since taking on my new role a number of folks have been pinging me to say congratulations (and thank you for that!</description>
     </item>
     

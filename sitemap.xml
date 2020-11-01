@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://theorize.co/</loc>
+    <lastmod>2020-11-01T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/</loc>
+    <lastmod>2020-11-01T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theorize.co/post/riskybusiness/</loc>
+    <lastmod>2020-11-01T07:22:59-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://theorize.co/post/gettingstrategic/</loc>
     <lastmod>2020-10-21T07:22:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://theorize.co/</loc>
-    <lastmod>2020-10-21T07:22:59-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theorize.co/post/</loc>
+    <loc>https://theorize.co/post/writing/gettingstrategic/</loc>
     <lastmod>2020-10-21T07:22:59-04:00</lastmod>
   </url>
   
