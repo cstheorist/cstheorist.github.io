@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="description" content=''>
+	
+		
+		<meta name="keywords" content=''>
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Hugo 0.58.3" />
+	<link rel="stylesheet" type="text/css" href='https://theorize.co/css/bootstrap.min.css'>
+	<title>Risky Business</title>
+</head>
+<body>
+      <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
+    <a href='https://theorize.co/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+    <a href='https://theorize.co/about'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+    <a href='https://theorize.co/post'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+    <a href='https://theorize.co/tags'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+</nav>
+
+
+	<section class="container text-justified mt-3">
+	  <h2 class="font-weight-bold">Risky Business</h2>
+	  <small class="text-secondary mb-5">Posted on November 1, 2020 | 
+		    13 minute read | 
+	            Share via 
+		       <a title='email' href='mailto:?subject=Risky%20Business&body=https%3a%2f%2ftheorize.co%2fpost%2friskybusiness%2f'><button class='btn btn-sm btn-light'>✉️</button></a>
+	               
+	  </small>
+		  <p>I have recently been thinking once again about how to continuously drive quality through improvements availability, securability and predictability in order to meet the needs and high expectations of developers and customers.  Ideally, just like with Functional Requirements, when we define our products we also consider other parts of the contract such as SLAs.  Under these conditions customers ideally expect that the software does exactly what it &ldquo;says on the tin.&rdquo;</p>
+
+<p>In reality as a member of a product development team (Systems Engineer, Product Owner, Software Engineer, etc) things are never quite as simple.  There is importance not just in the definition but also in HOW and WHEN that definition is met.  In other words we recognize that there are various competing forces and in many agile texts these are framed as:</p>
+
+<p>– Build the Right thing
+– Build the thing Right
+– Build the thing Fast</p>
+
+<p>The consequence of not reaching a balance between these competing forces can, for example, focusing to much on speed such that teams, once they ship their product, may suddenly find that the support burden is simply to high to continue innovating.  At the same time if to much pressure is on building things the right way the product may not ship with the minimum required set of features.  The challenge that is often faced however is determining the best method of communicating the trade-offs being made.  An interesting observation that I have made in a number of different Engineering Organizations I have worked is that while many teams are able to clearly recognize if they have built the right thing (feedback on a feature or as an engineer having tested to the requirements) and they can directly measure the speed at which code is shipped to customers (and receiving feedback); those same teams struggle to measure if the correct thing has been built.  Here are two quick examples&hellip;</p>
+
+<ul>
+<li>A manager I once worked with once told me: &ldquo;if we week on testing of course we will find more bugs - but we will also never ship our product.&rdquo;  They are absolutely right!</li>
+<li>In spending some time talking with a small group of engineers they complained that their team was constantly struggling in production and they were being called by support frequently.  Later in the same conversation I asked if I could get the team a month to work on whatever they wanted, what would it be?  The answer was that they would focus on building new features for customers.<br /></li>
+</ul>
+
+<p>The thing that I have come to observe is that there are actually two pieces at play here and I have started to come to believe that they have become conflated.  Specifically; how do we draw the distinction between:</p>
+
+<ul>
+<li>Building things the right way.</li>
+<li>Choosing HOW to build (fast and right).</li>
+</ul>
+
+<p>To be clear - both are important but they are also distinct.  The first relates to meeting some defined expectation (focus on the <strong>discrete</strong>, the output) while the second actually relates to the overall process and behavior (focus on the <strong>systemic</strong>) that achieves the right mix of Build the Right Thing, Build it Right and Build it Fast.  What I have observed over the years is that as soon as there is a question about some output, often times as a reaction to a problem such as a system outage, many stakeholders are not careful about the questions they ask and thus conflate both what has been built (was a previous decision wrong) as compared to the systemic question of are the right decisions being made.  For example; I will hear the question of &ldquo;is the quality of our software correct?&rdquo;  The problem is that the question is ambiguity - are we asking if the sum of choices correct (are we making the right trade-offs) or are we asking if once we have made a choice if there is a discrete problem in the software.  The end result (and outcome) can be equally messy.  I have seen:</p>
+
+<ul>
+<li>Everyone jump to focusing on attempting to solve a narrow vertical problem.
+
+<ul>
+<li>Think about a retrospective or post-mortem that you may have contributed to recently.  Was the discussion about WHY that problem occurred or was there discussion on the attributes of what happened and if the processes in place could prevent many cases of the style of problem from occurring?<br /></li>
+<li>Experience tells me likely one was focused on but BOTH questions are important.</li>
+</ul></li>
+<li>Focusing on one architectural &lsquo;-ility&rsquo;
+
+<ul>
+<li>This about after some large outage - did an organization become hyper focused on availability?  Or if there was a security incident did everyone jump to ask if all teams had the right security focus?  Similar to become over focused on a narrow vertical problem I argue that focusing to much attention on a single horizontal quality can equally drive too much engineering effort (and investment) with diminishing returns.</li>
+</ul></li>
+<li>Team become paralyzed by FUD.
+
+<ul>
+<li>Because there is always something better that <em>could</em> be done then perhaps we should do a little more testing.  I can&rsquo;t tell you how many times near the end of a release I have seen teams and management become nervous.</li>
+</ul></li>
+</ul>
+
+<p>Understanding that both questions (discrete concerns and systemic concerns) exist and should always be talked about may seem obvious at this point but such discussions happen infrequently.  Leaders, such as myself, need to take note to be careful in the questions we ask and do not allow ourselves (and our teams) to fall victim.  The results can be painful:</p>
+
+<ul>
+<li>If attention is always on the discrete then slowly over time the number of <strong>risks</strong> and consequence of such <strong>risk</strong> is likely to grow.  This isn&rsquo;t because of any one problem but rather because more software is built and deployed and therefore the likelihood of observing an undesirable consequence grows along with it.  Taking an over-simplified (but directionally correct) model we could state that every N thousand lines of code deployed will result in M human errors being made of which L percent will cause an outage.  Total outages will equal N * M * L.  Assuming a company in successful N will grow over time even if M and L stay constant.  If N outpaces re-imagining M and L then at some point the pain of the outages will be felt.  In similar fashion we could apply a model such as this to other risks such as compliance failure, security breach, etc.</li>
+<li>If attention always focuses on the systemic then the ability to ship new code (new features) will slow to a crawl.  Teams will constantly look to re-invent and re-debate past decisions.  In short, there are diminishing returns relative to the engineering cost required to achieve each incremental improvement.</li>
+</ul>
+
+<p>At this point it is worth asking about what are some ways to recognize and strike a balance between any discrete decision and watching for how decisions are more generally made.</p>
+
+<p>Many organizations will recognize the there are behavior and systemic changes needed (both in process and in architectural approach) once the some set of risks have been realized (an outage, security vulnerability, etc).  While this is not ideal it is also not a reason to panic (frankly doing so won&rsquo;t help anyhow - it leads to either a deer in headlights approach OR a squirrels all running in different directions jumping from issue to issue).  The following are some of my thoughts on how to keep an organization aligned.  It focuses on the following outcomes:</p>
+
+<ul>
+<li>Making things measurable by talking about RISK tolerance instead of &ldquo;-ilitiy&rdquo; improvement.</li>
+<li>Building a culture that is fearless in discussing risk.</li>
+<li>Maintaining a beginners mind.</li>
+<li>Creates a fast feedback cycle</li>
+</ul>
+
+<p><strong>Make things measurable</strong></p>
+
+<p>It is all to easy at this point to begin a discussion focused on &ldquo;improving&rdquo; but the first question to ask is if EVERYONE agrees on a definable outcome.  If I want to improve our security stance - when will we know we have achieved the goal?  Setting a goal of improvement almost always will fail (I wonder if this is actually correlated with the size of the organization) as soon as any stakeholder begins to questions &ldquo;if we are there yet.&rdquo;  If an organization has seen a streak of issues for example, it is easy to build near term momentum and focus on targeted improvements BUT if things are quite for a period of time, months for example, then stakeholders may question if everything is already where we want them to be and the motivation for continuing to invest will wane.</p>
+
+<p>A simple trick that I have found can help here is to focus the discussion on setting an acceptable <strong>risk</strong> goal and to catalog risks that exist.  I have seen that getting everyone aligned that a risk exists is far easier then attempting to align on an abstract improvement initiative.  The key is that a risk exists or does not exist.  While the consequence of the risk may be debated the process of talking about risk and asking if a risk is acceptable is much easier then asking if the quality of what we build is good enough.</p>
+
+<p>When thinking about measurements understanding if/when things are deviating from a steady state is equally important.  In other words; looking at the derivate of a metric that is being watched can be helpful.  When it comes to risk what we want to look at is if there is a change in which we are discovering (or solving for) risk.  Recognizing that risk is growing early (and the rate at which it is growing) can lead to taking proactive action.</p>
+
+<p><strong>Building a culture that is fearless in discussing risk</strong></p>
+
+<p>The problem in just talking about Risk is that it frequently requires a culture that is willing to openly discuss and debate risk (air ALL the dirty laundry).  In order to achieve measuring risk it is important that as soon as risk is recognized it is written down (in order to be measured).  If risk isn&rsquo;t written down then the measurements will be off.  Getting good at this takes time and is as much culture as it is any specific technical skill.  I have recognized that there are frequently two reasons that this fails:</p>
+
+<ul>
+<li>Talking about risk can lead to FUD.  FUD can be debilitating and I wrote a previous article talking about method for [dealing with FUD]( /post/dealingwithfud/.  Because of this, and perhaps because an organization has dealt with this in the past, individuals shy away from raising risk and stoking others fears.</li>
+<li>Fear of re-processions.  If an organization reacts poorly when a risk is identified then, simply put, risks will be raised less frequently.  This is a learned behavior.</li>
+</ul>
+
+<p>For leaders it is important to talk the talk and ensure that risks can be freely raised.  Creation of a risk register, discussing that risk can be accepted (accepting no risk we would imply not be shipping code), and showing how risk leads to action are all methods that can lead to a more fearless culture.</p>
+
+<p>Interestingly enough when looking to push a culture towards an openly talking about risk, creating focus on improving a service on behalf of a customer is helpful.  This is the opposite suggestion of the previous section (which targets creation of a mechanism that can drive discrete change) but recognizes the intent of encouraging writing down more while building alignment on the right level of investment.</p>
+
+<p><strong>Beginners Mind - Thinking about step function changes in needs</strong></p>
+
+<p>I am going to focus in a little on Availability for a moment simply to make a point.  An interesting discussion when I talk to teams about availability is that teams want to achieve more &ldquo;9&rsquo;s.&rdquo;  The approach I most often see is that a team has started with something that is perhaps built for 3 9&rsquo;s of availability (8-9 hours of downtime allowed in a year).  Over time that team wants to do better for customers and therefore pushes towards 4 9&rsquo;s (just under 1 hour of downtime allowed in a year).  Through engineering investments in testing and quality a team gets there.  Then then team sets a goal to achieve 5 9&rsquo;s (~5 minutes of downtime in a year).  Looking to the past those teams attempt to focus on up front quality as the main method for achieve this - but I argue there is a fundamental problem with this approach.  I am going to make a few assertions first:</p>
+
+<ul>
+<li>Likely metrics and monitoring to observe any error are trailing by about 5 minutes.  Even with 1 minute collection points there can be up to a 2 minute delay in observing a metric.</li>
+<li>Paging a human takes time.  Let&rsquo;s be optimistic and say even with alerts that trail at exactly 1 minute to get a human to get on VPN, and be ready to look will take on average 5 minutes (again I am being optimistic here).</li>
+<li>Making a decision takes some time.  If all the data is laid out or runbooks are well defined maybe that can be done in 1-2 minutes.</li>
+</ul>
+
+<p>If I start with these few assertions then the minimum time to correct an outage causing bug is 7-10 minutes in the best case.  The problem is that with humans in the loop achieving 5 9&rsquo;s of availability takes an approach that is fundamentally different then what can be done to achieve 3 or 4 9&rsquo;s of availability.  This includes becoming focused on self healing systems, automation of run-books, and more.</p>
+
+<p>Taking a step back; the same holds true for a number of different Non-Functional Style requirements.  The importance is that as a business grows it is important to maintain a beginners mind, to constantly re-evaluate if behaviors (and processes) that were sufficient to a point will still enable the business to move forward, and finally to be intellectually honest about the costs to take on such step function changes.</p>
+
+<p><strong>Don&rsquo;t  just &ldquo;Build the thing Fast&rdquo; - focus on the &ldquo;Feedback Cycle&rdquo;</strong></p>
+
+<p>Often a stakeholder will presume that &ldquo;build the thing fast applies&rdquo; to getting the final product out the door.  What is important to recognize is that a better interpretation would be to minimize the time before getting feedback (I am personally a huge proponent of Incremental development AND delivery (I have advocated with teams I have worked with on the notion of &ldquo;Hypothesis Driven Development&rdquo;)).  The distinction is important because the question becomes how to deploy, build, and improve over time (sequence delivery) while optimizing for the opportunity to collect feedback along the way.  The same holds true when thinking about risk reduction; especially when a team (or organization) encounters the need to invest more heavily such as determining that a step function change is required.  When faced with such a need it seems prudent and practical to start with one area that has an acceptable ROI that can be accomplished over a well understood and defined timeframe.  I specifically use the term acceptable because I have found even myself fall victim to first looking for the biggest pain point without considering the cost to fix it but in practice I have found that an organization can move MUCH faster by taking on a smaller effort and learning aggressively through incremental development.</p>
+
+<p><strong>Wrap-up</strong></p>
+
+<p>Quality is near and dear to my heart.  Being as engineer I have always seen myself as a craftsman and proud in the outcomes that the solutions I have produced enable over the longevity of the their lives.  Making smart and deliberate decisions, and at times investing in rebuilding and retooling, is important for achieve such outcomes found at the intersection of Build the right thing, Build it Right, and Build it Fast.  What are the techniques that you have found to find your balance?</p>
+
+	  <hr>
+	  <code>Tags:
+	  </code>
+	  <br>
+	    
+	      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+              <div id="commento"></div>
+	    
+	    
+	</section>
+
+
+
+      </div>
+  </body><footer>
+  <div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
+    <small> Any opinions expressed on this site are my own </small> </br>
+    <small> Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Derived from Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+  </div>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5XCESZV5Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M5XCESZV5Z');
+    </script>
+  
+</footer>
+<div>
+</div>
+</html>
